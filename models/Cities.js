@@ -1,16 +1,12 @@
-import { Schema, model, Types, Schema } from "mongoose";
+import { Schema, model, Types } from "mongoose";
 
 const colecction = 'cities'
 const schema = new Schema({
-    name: { type: String, require: true },
-    category: { type: String, require: true },
-    date: { type: date, require: true },
-    description: { type: String, require: true },
+    country: { type: String, require: true },
+    city: { type: String, require: true },
+    detail: { type: String, require: true },
     image: { type: String, require: true },
-    place: { type: String, require: true },
     price: { type: Number, require: true },
-    capacity: { type: Number, require: true },
-    assistance: { type: Number },
 },{
     timestamps: true
 })
