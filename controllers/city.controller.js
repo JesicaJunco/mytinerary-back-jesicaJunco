@@ -13,7 +13,7 @@ const controller = {
         }
 
         try {
-            const cities = await City.find(queries)
+            const cities = await City.find(queries).populate('user');
 
             if (cities.length > 0) {
                 return res.status(200).json({
@@ -33,7 +33,7 @@ const controller = {
             })
         }
     },
-    getEventById: async (req, res) => {
+    getCityById: async (req, res) => {
         try {
             // console.log(req.params)
             const oneCity = await City.findById(req.params.id)
@@ -58,7 +58,7 @@ const controller = {
             })
         }
     },
-    createCities: async (req, res) => {
+    createCity: async (req, res) => {
         try {
             const newCity = await City.create(req.body);
 

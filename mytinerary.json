@@ -4,21 +4,24 @@
       "city": "Paris",
       "image": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "The capital of France, Paris is one of the most romantic cities in the world. Famous for its cafes, museums, fashion and historic monuments like the Eiffel Tower.", 
-      "price": 2000
+      "price": 2000,
+      "user":"64e3b8e236ad6fd894942763"
     },
     {
       "country": "Italy",
       "city": "Rome",
       "image": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "The capital of Italy, Rome is known for its ancient ruins, Renaissance architecture and delicious food.",
-      "price": 1800  
+      "price": 1800,  
+      "user":"64e3b8e236ad6fd894942763"
     },
     {
       "country": "Spain",
       "city": "Barcelona",
       "image": "https://images.unsplash.com/photo-1560448204-603b3fc33ddc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "A cosmopolitan city on the Mediterranean coast, Barcelona is known for its art and architecture.",
-      "price": 1600
+      "price": 1600,
+      "user":"64e3b8e236ad6fd894942763"
     },
     {
       "country": "United Kingdom",
