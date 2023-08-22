@@ -28,83 +28,95 @@
       "city": "London", 
       "image": "https://images.unsplash.com/photo-1533929736458-ca588d08c8be?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "The capital of England and the United Kingdom, London is a leading global city filled with history, culture and diversity.",
-      "price": 2200
+      "price": 2200,
+      "user": "64e3c64af81517b49c452f6a"
     },
     {
       "country": "United States",
       "city": "New York City",
       "image": "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "The largest city in the US, New York City is a global hub for arts, commerce and culture.",
-      "price": 2000
+      "price": 2000,
+      "user": "64e3c67df81517b49c452f6c"
     },
     {
       "country": "Brazil",
       "city": "Rio de Janeiro",
       "image": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "Known for its iconic landmarks, beautiful beaches and lively carnivals, Rio de Janeiro is a vibrant city in Brazil.",
-      "price": 1800
+      "price": 1800,
+      "user": "64e3c68ef81517b49c452f6e"
     },
     {
       "country": "Japan",
       "city": "Tokyo",
       "image": "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "Tokyo is the high-tech, trend-setting capital of Japan and a world leader in finance and culture.",
-      "price": 2500
+      "price": 2500,
+      "user": "64e3c68ef81517b49c452f6e"
     },
     {
       "country": "China",
       "city": "Beijing",
       "image": "https://images.unsplash.com/photo-1501555088652-021faa106b9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",  
       "detail": "Beijing is the capital of China and home to many historical sites like the Forbidden City and Great Wall of China.",
-      "price": 2000
+      "price": 2000,
+      "user": "64e3c64af81517b49c452f6a"
     },
     {
       "country": "India",
       "city": "Agra",
       "image": "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "Home to the iconic Taj Mahal, Agra is a popular tourist destination in India.",
-      "price": 1500
+      "price": 1500,
+      "user": "64e3c68ef81517b49c452f6e"
     },
     {
       "country": "Mexico",
       "city": "Cancun",
       "image": "https://images.unsplash.com/photo-1503220317375-aaad61436b1b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "Known for its beaches, nightlife and eco-adventures, Cancun is a popular resort city in Mexico.",
-      "price": 1200
+      "price": 1200,
+      "user": "64e3c68ef81517b49c452f6e"
     },
     {
       "country": "Egypt", 
       "city": "Cairo",
       "image": "https://images.unsplash.com/photo-1503152889424-9c280f38cb1c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60",
       "detail": "Cairo is the capital of Egypt and home to ancient sites like the Pyramids of Giza and Egyptian Museum.",
-      "price": 1800
+      "price": 1800,
+      "user": "64e3c64af81517b49c452f6a"
     },
     {
       "country": "South Africa",
       "city": "Cape Town", 
       "image": "https://images.unsplash.com/photo-1536346122990-dd100ca7be9b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "Known for its stunning landscapes, beaches and cosmopolitan culture, Cape Town is a popular city in South Africa.",
-      "price": 2000
+      "price": 2000,
+      "user": "64e3c67df81517b49c452f6c"
     },
     {
       "country": "Greece",
       "city": "Athens",
       "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "The capital and largest city in Greece, Athens is the birthplace of democracy and home to ancient sites like the Acropolis.",
-      "price": 1700
+      "price": 1700,
+      "user": "64e3c68ef81517b49c452f6e"
     },
     {
       "country": "Australia",
       "city": "Sydney",
       "image": "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",
       "detail": "Known for its iconic opera house and harbor, Sydney is the largest city in Australia.", 
-      "price": 2500
+      "price": 2500,
+      "user": "64e3c67df81517b49c452f6c"
     },
     {
       "country": "Argentina",
       "city": "La Pampa",
       "image": "https://images.unsplash.com/photo-1555957224-0db6ab81e6dd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fHx8fHx8fHwyMDE4MzkwMTh8fHx8fHx8fHx8fHx8fHx8fHx8fHwxNzI0MTM0NjE0fHx8fHx8fHx8fHx8fHx8fHx8fHwxNzgyNjYwMjA1&auto=format&fit=crop&w=800&q=60",
       "detail": "La Pampa is a province in Argentina known for its vast grasslands, rural landscapes, and gaucho culture.",
-      "price": 1200
+      "price": 1200,
+      "user": "64e3c64af81517b49c452f6a"
       }
 ]

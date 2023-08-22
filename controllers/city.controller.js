@@ -8,7 +8,7 @@ const controller = {
             queries.city = new RegExp(`^${req.query.city}`, 'i')
         }
 
-        if(req.query.country) {
+        if (req.query.country) {
             queries.country = req.query.country
         }
 
@@ -19,7 +19,7 @@ const controller = {
                 return res.status(200).json({
                     success: true,
                     cities: cities
-                }) 
+                })
             }
             return res.status(404).json({
                 success: false,
@@ -38,7 +38,7 @@ const controller = {
             // console.log(req.params)
             const oneCity = await City.findById(req.params.id)
 
-            if(oneCity) {
+            if (oneCity) {
                 return res.status(200).json({
                     success: true,
                     city: oneCity
@@ -64,7 +64,7 @@ const controller = {
 
             return res.status(201).json({
                 success: true,
-                message: 'City created'
+                message: 'Ciudad creada'
             })
         }
         catch (error) {
@@ -75,7 +75,40 @@ const controller = {
             })
         }
 
-    }
+    },
+    updateCity: async (req, res) => {
+        try {
+            await City.updateOne({ _id: req.params.id }, req.body)
+
+            return res.status(200).json({
+                success: true,
+                message: 'La ciudad se actualizo con exito'
+            })
+
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                success: false,
+                message: 'Error al actualizar la ciudad'
+            })
+        }
+    },
+    deleteCity: async (req, res) => {
+        try {
+            await City.deleteOne({ _id: req.params.id })
+
+            return res.status(200).json({
+                success: true,
+                message: 'La ciudad se elimino con exito'
+            })
+        } catch (error) {
+            console.log(error)
+            return res.status(500).json({
+                success: false,
+                message: 'Error al eliminar la ciudad'
+            })
+        }
+    },
 }
 
 export default controller;
