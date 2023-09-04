@@ -1,98 +1,103 @@
-import User from "../models/User.js"
+import Itinerary from "../models/Itinerary.js"
 
 const controller = {
-    getUsers: async(req, res)=>{
-        let queries = {}
-        if(req.query.name){
-            queries.name = new RegExp(`^${req.query.name}`, 'i')
+    getItineraries: async(req, res) => {
+        let queries = {} 
+        if(req.query.itinerary){
+            queries.itinerary = new RegExp(`^${req.query.itinerary}`, 'i')
         }
 
         try {
-            const users = await User.find(queries)
-            if(users.length >0 ){
+            const itineraries = await Itinerary.find(queries)
+            if(itineraries.length > 0 ){
                 return res.status(200).json({
                     success: true,
-                    cities
+                    itineraries
                 })
             }
 
             return res.status(404).json({
                 success: false,
-                message: "We can't find the user"
+                message: "We can't find the Itinerary"
             });
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error getting the Users'
+                message: 'Error getting the itineraries'
             })
         }
     },
-    getUserById: async(req, res) => {
+
+    getItineraryById: async(req, res) => {
         try {
-            const oneUser = await User.findById(req.params.id).populate('itineraries')
+            const oneItinerary = await Itinerary.findById(req.params.id).populate({
+                path: 'user',
+                path: 'activities'})
             
-            if(oneUser){
+            if(oneItinerary){
                 return res.status(200).json({
                     success: true,
-                    user: oneUser
+                    itinerary: oneItinerary
                 });
             }
             return res.status(404).json({
                 success: false,
-                message: 'Error getting the User'
+                message: 'Error getting the Itinerary'
             });
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error getting the User'
+                message: 'Error getting the Itinerary'
             })
         } 
-    },    createUser: async(req, res)=>{
+    },
+
+    createItinerary: async(req, res) => {
         try {
-            const newUser = await User.create(req.body); 
+            const newItinerary = await Itinerary.create(req.body); 
         
             return res.status(201).json({
                 success: true,
-                message: 'User created'
+                message: 'Itinerary created'
             })
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error creating the User'
+                message: 'Error creating the Itinerary'
             })
-        }    
+        }        
     },
-    updateUser: async(req, res) => {
+    updateItinerary: async(req, res) => {
         try {
-            await User.updateOne({_id: req.params.id}, req.body)
+            await Itinerary.updateOne({_id: req.params.id}, req.body)
             return res.status(200).json({
                 success: true,
-                message: 'User updated successfully'
+                message: 'Itinerary updated successfully'
             })
 
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error trying to update the User'
+                message: 'Error trying to update the Itinerary'
             })
         }
     },
-    deleteUser: async(req, res) => {
+    deleteItinerary: async(req, res) => {
         try {
-            await User.deleteOne({_id: req.params.id})
+            await Itinerary.deleteOne({_id: req.params.id})
             return res.status(200).json({
                 success: true,
-                message: 'User deleted successfully'
+                message: 'Itinerary deleted successfully'
             })
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error trying to delete the User'
+                message: 'Error trying to delete the Itinerary'
             })
         }
     },

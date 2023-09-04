@@ -1,98 +1,102 @@
-import User from "../models/User.js"
+import Activity from "../models/Activity.js";
 
 const controller = {
-    getUsers: async(req, res)=>{
-        let queries = {}
-        if(req.query.name){
-            queries.name = new RegExp(`^${req.query.name}`, 'i')
+    getActivities: async(req, res) => {
+        let queries = {} 
+        if(req.query.activity){
+            queries.activity = new RegExp(`^${req.query.activity}`, 'i')
         }
 
+
         try {
-            const users = await User.find(queries)
-            if(users.length >0 ){
+            const activities = await Activity.find(queries)
+            if(activities.length > 0 ){
                 return res.status(200).json({
                     success: true,
-                    cities
+                    activities
                 })
             }
 
             return res.status(404).json({
                 success: false,
-                message: "We can't find the user"
+                message: "We can't find the activity"
             });
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error getting the Users'
+                message: 'Error getting the activities'
             })
         }
     },
-    getUserById: async(req, res) => {
+
+    getActivityById: async(req, res) => {
         try {
-            const oneUser = await User.findById(req.params.id).populate('itineraries')
+            const oneActivity = await Activity.findById(req.params.id)
             
-            if(oneUser){
+            if(oneActivity){
                 return res.status(200).json({
                     success: true,
-                    user: oneUser
+                    activity: oneActivity
                 });
             }
             return res.status(404).json({
                 success: false,
-                message: 'Error getting the User'
+                message: 'Error getting the Activity'
             });
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error getting the User'
+                message: 'Error getting the Activity'
             })
         } 
-    },    createUser: async(req, res)=>{
+    },
+
+    createActivity: async(req, res) => {
         try {
-            const newUser = await User.create(req.body); 
+            const newActivity = await Activity.create(req.body); 
         
             return res.status(201).json({
                 success: true,
-                message: 'User created'
+                message: 'Activity created'
             })
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error creating the User'
+                message: 'Error creating the Activity'
             })
-        }    
+        }        
     },
-    updateUser: async(req, res) => {
+    updateActivity: async(req, res) => {
         try {
-            await User.updateOne({_id: req.params.id}, req.body)
+            await Activity.updateOne({_id: req.params.id}, req.body)
             return res.status(200).json({
                 success: true,
-                message: 'User updated successfully'
+                message: 'Activity updated successfully'
             })
 
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error trying to update the User'
+                message: 'Error trying to update the Activity'
             })
         }
     },
-    deleteUser: async(req, res) => {
+    deleteActivity: async(req, res) => {
         try {
-            await User.deleteOne({_id: req.params.id})
+            await Activity.deleteOne({_id: req.params.id})
             return res.status(200).json({
                 success: true,
-                message: 'User deleted successfully'
+                message: 'Activity deleted successfully'
             })
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
-                message: 'Error trying to delete the User'
+                message: 'Error trying to delete the Activity'
             })
         }
     },
