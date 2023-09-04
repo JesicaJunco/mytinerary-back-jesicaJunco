@@ -8,7 +8,8 @@ const schema = new Schema({
     detail: { type: String, require: true },
     image: { type: String, require: true },
     price: { type: Number, require: true },
-    user:{type: Types.ObjectId, ref: 'users'}
+    user:{type: Types.ObjectId, ref: 'users'},
+    itineraries: [{type: Types.ObjectId, ref : 'itineraries'}]
 },{
     timestamps: true
 })
