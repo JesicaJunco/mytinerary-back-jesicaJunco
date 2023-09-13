@@ -21,16 +21,10 @@ const controller = {
                     cities: cities
                 })
             }
-            return res.status(404).json({
-                success: false,
-                message: 'No se encontraron ciudades'
-            })
+
+            return next(error)
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error al obtener las ciudades'
-            })
+            next(error)
         }
     },
     getCityById: async (req, res) => {
@@ -44,19 +38,10 @@ const controller = {
                     city: oneCity
                 })
             }
-
-            return res.status(404).json({
-                success: false,
-                message: 'No se pudo encontrar la ciudad'
-            })
-
+            return next(error)
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error al obtener la ciudad'
-            })
-        }
+            next(error)
+        } 
     },
     createCity: async (req, res) => {
         try {
@@ -64,17 +49,11 @@ const controller = {
 
             return res.status(201).json({
                 success: true,
-                message: 'Ciudad creada'
+                message: 'City created'
             })
+        } catch (error) {
+            next(error)
         }
-        catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error al crear la ciudad'
-            })
-        }
-
     },
     updateCity: async (req, res) => {
         try {
@@ -82,15 +61,11 @@ const controller = {
 
             return res.status(200).json({
                 success: true,
-                message: 'La ciudad se actualizo con exito'
+                message: 'City updated successfully'
             })
 
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error al actualizar la ciudad'
-            })
+            next(error)
         }
     },
     deleteCity: async (req, res) => {
@@ -99,14 +74,10 @@ const controller = {
 
             return res.status(200).json({
                 success: true,
-                message: 'La ciudad se elimino con exito'
+                message: 'City deleted successfully'
             })
         } catch (error) {
-            console.log(error)
-            return res.status(500).json({
-                success: false,
-                message: 'Error al eliminar la ciudad'
-            })
+            next(error)
         }
     },
 }

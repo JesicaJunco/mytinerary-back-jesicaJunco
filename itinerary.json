@@ -6,11 +6,11 @@
         "price": 50,
         "likes": 0,
         "hashtags": ["#citytour", "#sightseeing"],
-        "user": " Travels_CL",
-        "activities": ["Walking tour of the historic center, visits to main museums, lunch at a local restaurant"],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "Great experience, the guide really knew the history of the city.- Maria G."},
-          {"comment": "Very comprehensive tour to see the highlights in a short time.- Pedro S."}
+          {"comment": "Great experience, the guide really knew the history of the city.", "users":[]},
+          {"comment": "Very comprehensive tour to see the highlights in a short time.", "users":[]}
         ]
       },
       {
@@ -19,24 +19,24 @@
         "price": 80,
         "likes": 0,
         "hashtags": ["#mountainlovers", "#hiking", "#landscape"],
-        "user": "Nature_adventure",
-        "activities": ["uided mountain hike, visits to viewpoints, outdoor picnic."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "The views from the summit were spectacular! - Juana R."},
-          {"comment": "Wear good shoes and comfortable clothes but the effort is worth it. - Esteban C."}
+          {"comment": "The views from the summit were spectacular!", "users":[]},
+          {"comment": "Wear good shoes and comfortable clothes but the effort is worth it.", "users":[]}
         ]
-      },
+        },
       {
         "name": " Food Tour",
         "duration": 4,
         "price": 70,
         "likes": 0,
         "hashtags": ["#foodtour", "#foodies", "#tasting"],
-        "user": "Local_flavors",
-        "activities": ["Walking tour of markets and restaurants, tastings of typical dishes."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "The best way to discover the city's cuisine, everything was delicious! - Luis G."},
-          {"comment": "Leaving this tour hungry is impossible, I highly recommend it! - Marta S."}
+          {"comment": "The best way to discover the city's cuisine, everything was delicious!", "users":[]},
+          {"comment": "Leaving this tour hungry is impossible, I highly recommend it!", "users":[]}
         ]
       },
       {
@@ -45,11 +45,11 @@
         "price": 30,
         "likes": 0,
         "hashtags": ["#tapas", "#nighttime", "#localflavors"],
-        "user": "Falvors",
-        "activities": ["Explore the old town, taste traditional dishes."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "An incredible experience, I learned so much about the history of local food. Highly recommended! - Ana R."},
-          {"comment": "The flavors were authentic and delightful; I'll definitely be back. - Luis M."}
+          {"comment": "An incredible experience, I learned so much about the history of local food. Highly recommended!", "users":[]},
+          {"comment": "The flavors were authentic and delightful; I'll definitely be back.", "users":[]}
         ]
       },
       {
@@ -58,11 +58,11 @@
         "price": 36,
         "likes": 0,
         "hashtags": ["#Beijing", "#Exploration", "#History"],
-        "user": "6Stars",
-        "activities": ["Visit local bars, savor tapas and wines."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "A fun and delicious night; the tapas were amazing! - Marta S."},
-          {"comment": "I discovered some great places I would never have found on my own. - Carlos D."}
+          {"comment": "A fun and delicious night; the tapas were amazing!", "users":[]},
+          {"comment": "I discovered some great places I would never have found on my own.", "users":[]}
         ]
       },
       {
@@ -71,11 +71,11 @@
         "price": 89,
         "likes": 0,
         "hashtags": ["#desserts", "#cafes", "#sweets"],
-        "user": "Sweet",
-        "activities": ["Explore the best pastry shops and cafes in the city."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "A perfect tour for sweet lovers; the desserts were divine. - Elena P."},
-          {"comment": "I loved every bite of this experience. I'll definitely do it again! - David L."}
+          {"comment": "A perfect tour for sweet lovers; the desserts were divine.", "users":[]},
+          {"comment": "I loved every bite of this experience. I'll definitely do it again!", "users":[]}
         
         ]
       },
@@ -85,11 +85,11 @@
         "price": 35,
         "likes": 0,
         "hashtags": ["#vegan", "#healthy", "#consciouseating"],
-        "user": "Green",
-        "activities": ["Discover vegan and healthy options at restaurants and markets."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "Even if you're not vegan, this tour is a delight. The options were delicious! - Laura G."},
-          {"comment": "I was pleasantly surprised by the variety and taste of vegan food. - Marcos C."}
+          {"comment": "Even if you're not vegan, this tour is a delight. The options were delicious!", "users":[]},
+          {"comment": "I was pleasantly surprised by the variety and taste of vegan food.", "users":[]}
         ]
       },
       {
@@ -98,11 +98,11 @@
         "price": 3,
         "likes": 0,
         "hashtags": ["#seafood", "#fish", "#marin flavors"],
-        "user": "Seafood",
-        "activities": ["Visit the harbor, sample fresh seafood."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "A feast of fresh seafood; I can't wait to go back. - Andrea M."},
-          {"comment": "This tour made me appreciate the flavors of the sea even more. - Pedro R."}
+          {"comment": "A feast of fresh seafood; I can't wait to go back", "users":[]},
+          {"comment": "This tour made me appreciate the flavors of the sea even more.", "users":[]}
         ]
       },
       {
@@ -111,11 +111,11 @@
         "price": 50,
         "likes": 0,
         "hashtags": ["#ethnicfood", "#culinarydiversity", "#gourmettravel"],
-        "user": "Fla",
-        "activities": ["Explore ethnic restaurants and savor dishes from different cultures."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "A global culinary adventure; I felt like I had traveled the world. - Maria V."},
-          {"comment": "Ethnic food has always been a mystery to me, but now I love it! - Juan S."}
+          {"comment": "A global culinary adventure; I felt like I had traveled the world.", "users":[]},
+          {"comment": "Ethnic food has always been a mystery to me, but now I love it!", "users":[]}
         ]
       },
       {
@@ -124,11 +124,11 @@
         "price": 45,
         "likes": 0,
         "hashtags": ["#cheese", "#wines", "#pairing"],
-        "user": "Vi",
-        "activities": ["Pair cheeses and wines at local wineries."],
+        "user":"",
+        "activities": [],
         "comments": [
-          {"comment": "A gourmet experience; the pairings were surprisingly good. - Sofia L."},
-          {"comment":"If you love cheese and wine, this tour is a dream come true. - Diego G."}
+          {"comment": "A gourmet experience; the pairings were surprisingly good.", "users":[]},
+          {"comment":"If you love cheese and wine, this tour is a dream come true.", "users":[]}
         ]
       },
       {
@@ -136,11 +136,12 @@
         "duration": 6,
         "price": 34,
         "likes": 0,
-        "hashtags": "Street",
-        "activities": ["Sample authentic street food."],
+        "hashtags": ["Street"],
+        "user":"",
+        "activities": [],
         "comments": [
-          {"comment": "The authenticity of street food left me speechless. - Laura M."},
-          {"comment": "This tour showed me the culinary heart of the city. - Alejandro S."}
+          {"comment": "The authenticity of street food left me speechless.", "users":[]},
+          {"comment": "This tour showed me the culinary heart of the city.", "users":[]}
         ]
       },
       {
@@ -149,11 +150,11 @@
         "price": 57,
         "likes": 0,
         "hashtags": ["#chocolate", "#coffee", "#sweets"],
-        "user": "Choc",
-        "activities": ["Visit chocolate shops and specialized cafes."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "A chocolate and coffee paradise; I loved every stop! - Carolina R."},
-          {"comment": "Chocolate and coffee lovers can't miss this tour. - Pablo D."}
+          {"comment": "A chocolate and coffee paradise; I loved every stop!", "users":[]},
+          {"comment": "Chocolate and coffee lovers can't miss this tour.", "users":[]}
         ]
       },
       {
@@ -162,11 +163,11 @@
         "price": 48,
         "likes": 0,
         "hashtags": ["#wine", "#wineries ", "#winetasting"],
-        "user": "Vin",
-        "activities": ["Enjoy wine tastings at local wineries."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "An educational wine experience with exceptional tastings. - Carla S."},
-          {"comment": "I became a wine lover after this tour. - Antonio M."}
+          {"comment": "An educational wine experience with exceptional tastings.", "users":[]},
+          {"comment": "I became a wine lover after this tour.", "users":[]}
         ]
       },
       {
@@ -174,12 +175,12 @@
         "duration": 5,
         "price": 90,
         "likes": 0,
-        "hashtags": ["#ethnic food", "#culinary diversity", "#ourmet travel"],
-        "user": "Sabor",
-        "activities": ["Explore ethnic restaurants and try dishes from different cultures."],
+        "hashtags": ["#ethnic food", "#culinary diversity", "#gourmet travel"],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": ""},
-          {"comment": ""}
+          {"comment": "Any recommendations for visiting?", "users":[]},
+          {"comment": "The food here is delicious.", "users":[]}
         ]
       },
       {
@@ -188,13 +189,15 @@
         "price": 30,
         "likes":0,
         "hashtags": ["#cheeses ", "#wines", "#pairing"],
-        "user": "Ches",
-        "activities": ["Cheese and wine pairing at local wineries."],
+        "user": "",
+        "activities": [],
         "comments": [
-          {"comment": "I participated in the 'Vinícola Exquisita' wine tasting tour, and it was an exceptional experience."},
-          {"comment": "The wine tastings were the highlight of the tour."}
+          {"comment": "I participated in the 'Vinícola Exquisita' wine tasting tour, and it was an exceptional experience.", "users":[]},
+          {"comment": "The wine tastings were the highlight of the tour.", "users":[]}
         ]
       }
     ]
   }
+    
+
   

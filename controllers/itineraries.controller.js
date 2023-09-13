@@ -32,7 +32,7 @@ const controller = {
     getItineraryById: async(req, res) => {
         try {
             const oneItinerary = await Itinerary.findById(req.params.id).populate({
-                path: 'user',
+                path: 'users',
                 path: 'activities'})
             
             if(oneItinerary){
@@ -53,7 +53,6 @@ const controller = {
             })
         } 
     },
-
     createItinerary: async(req, res) => {
         try {
             const newItinerary = await Itinerary.create(req.body); 
