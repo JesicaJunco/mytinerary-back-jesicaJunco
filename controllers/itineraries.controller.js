@@ -32,6 +32,7 @@ const controller = {
     getItineraryById: async(req, res) => {
         try {
             const oneItinerary = await Itinerary.findById(req.params.id).populate({
+                path: 'cities',
                 path: 'users',
                 path: 'activities'})
             
