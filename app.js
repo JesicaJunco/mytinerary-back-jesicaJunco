@@ -15,6 +15,7 @@ app.use(cors());
 //req es el objeto solicitud
 //res es el objeto respuesta
 app.use('/api', indexRouter);
-
+app.use(notFound);
+app.use(errorHandler);
 app.listen(PORT, () => console.log('Server running on port: ' + PORT));
 

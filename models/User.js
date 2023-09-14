@@ -1,16 +1,20 @@
-import { Schema, model, Types } from "mongoose";
+import { Schema,model,Types } from "mongoose";
 
-const collection = 'users';
+let collection = 'users';
 
-const schema = new Schema({
-    name: { type: String, required: true },
-    image: { type: String}
+let schema =  new Schema({
+    name : {type:String, required:true},
+    email: {type: String, required:true},
+    password: {type:String, required:true},
+    image : {type:String},
+    itineraries: [{type: Types.ObjectId, ref : 'itineraries'}],
+    role:{type: String},
+    is_verified: {type: Boolean, default: true},
+    verified_code: {type: String},
+    online: {type: Boolean, default: false}
 },{
     timestamps: true
-});
+})
 
-const User = model(collection, schema);
-
+const User = model (collection, schema);
 export default User;
-
-
