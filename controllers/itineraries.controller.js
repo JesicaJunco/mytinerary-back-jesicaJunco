@@ -1,15 +1,19 @@
 import Itinerary from "../models/Itinerary.js"
 
 const controller = {
-    getItineraries: async(req, res) => {
-        let queries = {} 
-        if(req.query.itinerary){
+    getItineraries: async (req, res) => {
+        let queries = {}
+        if (req.query.itinerary) {
             queries.itinerary = new RegExp(`^${req.query.itinerary}`, 'i')
         }
 
         try {
             const itineraries = await Itinerary.find(queries)
-            if(itineraries.length > 0 ){
+            .populate('city')
+                .populate('user')
+                .populate('activities')
+
+            if (itineraries.length > 0) {
                 return res.status(200).json({
                     success: true,
                     itineraries
@@ -29,35 +33,36 @@ const controller = {
         }
     },
 
-    getItineraryById: async(req, res) => {
+    getItineraryById: async (req, res) => {
         try {
-            const oneItinerary = await Itinerary.findById(req.params.id).populate({
-                path: 'cities',
-                path: 'users',
-                path: 'activities'})
-            
-            if(oneItinerary){
-                return res.status(200).json({
-                    success: true,
-                    itinerary: oneItinerary
-                });
-            }
-            return res.status(404).json({
+            const oneItinerary = await Itinerary.findById(req.params.id)
+                .populate('city')
+                .populate('user')
+                .populate('activities')
+
+            if (!oneItinerary) {
+               return res.status(404).json({
                 success: false,
                 message: 'Error getting the Itinerary'
             });
+            } 
+            return res.status(200).json({
+                    success: true,
+                    itinerary: oneItinerary
+                });
+            
         } catch (error) {
             console.log(error);
             return res.status(500).json({
                 succes: false,
                 message: 'Error getting the Itinerary'
             })
-        } 
+        }
     },
-    createItinerary: async(req, res) => {
+    createItinerary: async (req, res) => {
         try {
-            const newItinerary = await Itinerary.create(req.body); 
-        
+            const newItinerary = await Itinerary.create(req.body);
+
             return res.status(201).json({
                 success: true,
                 message: 'Itinerary created'
@@ -68,11 +73,11 @@ const controller = {
                 succes: false,
                 message: 'Error creating the Itinerary'
             })
-        }        
+        }
     },
-    updateItinerary: async(req, res) => {
+    updateItinerary: async (req, res) => {
         try {
-            await Itinerary.updateOne({_id: req.params.id}, req.body)
+            await Itinerary.updateOne({ _id: req.params.id }, req.body)
             return res.status(200).json({
                 success: true,
                 message: 'Itinerary updated successfully'
@@ -86,9 +91,9 @@ const controller = {
             })
         }
     },
-    deleteItinerary: async(req, res) => {
+    deleteItinerary: async (req, res) => {
         try {
-            await Itinerary.deleteOne({_id: req.params.id})
+            await Itinerary.deleteOne({ _id: req.params.id })
             return res.status(200).json({
                 success: true,
                 message: 'Itinerary deleted successfully'

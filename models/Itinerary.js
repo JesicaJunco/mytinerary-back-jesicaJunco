@@ -5,7 +5,7 @@ let collection = 'itineraries';
 let schema = new Schema({
     city: {
         type: Schema.Types.ObjectId,
-        ref: 'Cities',
+        ref: 'cities',
         required: true
     },
     name: { type: String, required: true },
