@@ -3,6 +3,7 @@ import cityRouter from "./city.router.js";
 import userRouter from "./user.router.js";
 import itinerariesRouter from "./itineraries.router.js "
 import activitiesRouter from "./activities.router.js"
+import authRouter from './auth.router.js';
 
 
 const router = express.Router()
@@ -15,6 +16,6 @@ router.use('/cities', cityRouter);
 router.use('/users', userRouter);
 router.use('/itineraries', itinerariesRouter);
 router.use('/activities', activitiesRouter);
-
+router.use('/auth', authRouter);
 
 export default router

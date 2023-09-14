@@ -4,6 +4,8 @@ import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
 import indexRouter from './router/index.router.js';
+import { notFound } from './middlewares/notFound.middleware.js';
+import { errorHandler } from './middlewares/errorHandler.middleware.js';
 
 const app = express();
 const PORT = process.env.PORT || 8000;
