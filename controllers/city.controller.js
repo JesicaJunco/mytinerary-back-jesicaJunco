@@ -1,7 +1,7 @@
 import City from '../models/Cities.js'
 
 const controller = {
-    getCities: async (req, res) => {
+    getCities: async (req, res, next) => {
 
         let queries = {}
         if (req.query.city) {

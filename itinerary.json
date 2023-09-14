@@ -1,203 +1,270 @@
 {
-    "itineraries": [
-      {
-        "name": "City Tour",
-        "duration": 6,
-        "price": 50,
-        "likes": 0,
-        "hashtags": ["#citytour", "#sightseeing"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "Great experience, the guide really knew the history of the city.", "users":[]},
-          {"comment": "Very comprehensive tour to see the highlights in a short time.", "users":[]}
-        ]
-      },
-      {
-        "name": "Mountain Hiking",
-        "duration": 8,
-        "price": 80,
-        "likes": 0,
-        "hashtags": ["#mountainlovers", "#hiking", "#landscape"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "The views from the summit were spectacular!", "users":[]},
-          {"comment": "Wear good shoes and comfortable clothes but the effort is worth it.", "users":[]}
-        ]
+  "itineraries": [
+    {
+      "name": "City Tour",
+      "duration": 6,
+      "price": 50,
+      "likes": 0,
+      "hashtags": ["#citytour", "#sightseeing"],
+      "user": "650064b5d15f9c22f06d130e",
+      "activities": ["65006540d15f9c22f06d131e"],
+      "comments": [
+        {
+          "comment": "Great experience, the guide really knew the history of the city.",
+          "users": "65019c056078bada6e2f7e84"
         },
-      {
-        "name": " Food Tour",
-        "duration": 4,
-        "price": 70,
-        "likes": 0,
-        "hashtags": ["#foodtour", "#foodies", "#tasting"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "The best way to discover the city's cuisine, everything was delicious!", "users":[]},
-          {"comment": "Leaving this tour hungry is impossible, I highly recommend it!", "users":[]}
-        ]
-      },
-      {
-        "name": " Flavors of the Past",
-        "duration": 8,
-        "price": 30,
-        "likes": 0,
-        "hashtags": ["#tapas", "#nighttime", "#localflavors"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "An incredible experience, I learned so much about the history of local food. Highly recommended!", "users":[]},
-          {"comment": "The flavors were authentic and delightful; I'll definitely be back.", "users":[]}
-        ]
-      },
-      {
-        "name": "Tapas under the Stars",
-        "duration": 7,
-        "price": 36,
-        "likes": 0,
-        "hashtags": ["#Beijing", "#Exploration", "#History"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "A fun and delicious night; the tapas were amazing!", "users":[]},
-          {"comment": "I discovered some great places I would never have found on my own.", "users":[]}
-        ]
-      },
-      {
-        "name": " Sweet Delights",
-        "duration": 5,
-        "price": 89,
-        "likes": 0,
-        "hashtags": ["#desserts", "#cafes", "#sweets"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "A perfect tour for sweet lovers; the desserts were divine.", "users":[]},
-          {"comment": "I loved every bite of this experience. I'll definitely do it again!", "users":[]}
-        
-        ]
-      },
-      {
-        "name": "Green and Vital",
-        "duration": 6,
-        "price": 35,
-        "likes": 0,
-        "hashtags": ["#vegan", "#healthy", "#consciouseating"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "Even if you're not vegan, this tour is a delight. The options were delicious!", "users":[]},
-          {"comment": "I was pleasantly surprised by the variety and taste of vegan food.", "users":[]}
-        ]
-      },
-      {
-        "name": " Seafood Delights",
-        "duration": 7,
-        "price": 3,
-        "likes": 0,
-        "hashtags": ["#seafood", "#fish", "#marin flavors"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "A feast of fresh seafood; I can't wait to go back", "users":[]},
-          {"comment": "This tour made me appreciate the flavors of the sea even more.", "users":[]}
-        ]
-      },
-      {
-        "name": "Flavors of the World",
-        "duration": 5,
-        "price": 50,
-        "likes": 0,
-        "hashtags": ["#ethnicfood", "#culinarydiversity", "#gourmettravel"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "A global culinary adventure; I felt like I had traveled the world.", "users":[]},
-          {"comment": "Ethnic food has always been a mystery to me, but now I love it!", "users":[]}
-        ]
-      },
-      {
-        "name": "Cheeses and Vines",
-        "duration": 5,
-        "price": 45,
-        "likes": 0,
-        "hashtags": ["#cheese", "#wines", "#pairing"],
-        "user":"",
-        "activities": [],
-        "comments": [
-          {"comment": "A gourmet experience; the pairings were surprisingly good.", "users":[]},
-          {"comment":"If you love cheese and wine, this tour is a dream come true.", "users":[]}
-        ]
-      },
-      {
-        "name": "Street Food Delights",
-        "duration": 6,
-        "price": 34,
-        "likes": 0,
-        "hashtags": ["Street"],
-        "user":"",
-        "activities": [],
-        "comments": [
-          {"comment": "The authenticity of street food left me speechless.", "users":[]},
-          {"comment": "This tour showed me the culinary heart of the city.", "users":[]}
-        ]
-      },
-      {
-        "name": "Chocolatíssimos",
-        "duration": 4,
-        "price": 57,
-        "likes": 0,
-        "hashtags": ["#chocolate", "#coffee", "#sweets"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "A chocolate and coffee paradise; I loved every stop!", "users":[]},
-          {"comment": "Chocolate and coffee lovers can't miss this tour.", "users":[]}
-        ]
-      },
-      {
-        "name": "Exquisite Viniculture",
-        "duration": 6,
-        "price": 48,
-        "likes": 0,
-        "hashtags": ["#wine", "#wineries ", "#winetasting"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "An educational wine experience with exceptional tastings.", "users":[]},
-          {"comment": "I became a wine lover after this tour.", "users":[]}
-        ]
-      },
-      {
-        "name": " Flavors of the World",
-        "duration": 5,
-        "price": 90,
-        "likes": 0,
-        "hashtags": ["#ethnic food", "#culinary diversity", "#gourmet travel"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "Any recommendations for visiting?", "users":[]},
-          {"comment": "The food here is delicious.", "users":[]}
-        ]
-      },
-      {
-        "name": "Cheeses and Strains",
-        "duration": 7,
-        "price": 30,
-        "likes":0,
-        "hashtags": ["#cheeses ", "#wines", "#pairing"],
-        "user": "",
-        "activities": [],
-        "comments": [
-          {"comment": "I participated in the 'Vinícola Exquisita' wine tasting tour, and it was an exceptional experience.", "users":[]},
-          {"comment": "The wine tastings were the highlight of the tour.", "users":[]}
-        ]
-      }
-    ]
-  }
-    
-
-  
+        {
+          "comment": "Very comprehensive tour to see the highlights in a short time.",
+          "users": "65019c056078bada6e2f7e85"
+        }
+      ]
+    },
+    {
+      "name": " Food Tour",
+      "duration": 4,
+      "price": 70,
+      "likes": 0,
+      "hashtags": ["#foodtour", "#foodies", "#tasting"],
+      "user": "650064b5d15f9c22f06d1313",
+      "activities": ["65006540d15f9c22f06d1320"],
+      "comments": [
+        {
+          "comment": "The best way to discover the city's cuisine, everything was delicious!",
+          "users": "65019c056078bada6e2f7e84"
+        },
+        {
+          "comment": "Leaving this tour hungry is impossible, I highly recommend it!",
+          "users": "65019c056078bada6e2f7e83"
+        }
+      ]
+    },
+    {
+      "name": " Flavors of the Past",
+      "duration": 8,
+      "price": 30,
+      "likes": 0,
+      "hashtags": ["#tapas", "#nighttime", "#localflavors"],
+      "user": "650064b5d15f9c22f06d1312",
+      "activities": ["65006540d15f9c22f06d1321"],
+      "comments": [
+        {
+          "comment": "An incredible experience, I learned so much about the history of local food. Highly recommended!",
+          "users": []
+        },
+        {
+          "comment": "The flavors were authentic and delightful; I'll definitely be back.",
+          "users": "65019c056078bada6e2f7e84"
+        }
+      ]
+    },
+    {
+      "name": "Tapas under the Stars",
+      "duration": 7,
+      "price": 36,
+      "likes": 0,
+      "hashtags": ["#Beijing", "#Exploration", "#History"],
+      "user": "650064b5d15f9c22f06d1310",
+      "activities": ["65006540d15f9c22f06d1322"],
+      "comments": [
+        {
+          "comment": "A fun and delicious night; the tapas were amazing!",
+          "users": "5019c056078bada6e2f7e87"
+        },
+        {
+          "comment": "I discovered some great places I would never have found on my own.",
+          "users": "65019c056078bada6e2f7e85"
+        }
+      ]
+    },
+    {
+      "name": " Sweet Delights",
+      "duration": 5,
+      "price": 89,
+      "likes": 0,
+      "hashtags": ["#desserts", "#cafes", "#sweets"],
+      "user": "650064b5d15f9c22f06d130e",
+      "activities": ["65006540d15f9c22f06d1325"],
+      "comments": [
+        {
+          "comment": "A perfect tour for sweet lovers; the desserts were divine.",
+          "users": "5019c056078bada6e2f7e87"
+        },
+        {
+          "comment": "I loved every bite of this experience. I'll definitely do it again!",
+          "users": "5019c056078bada6e2f7e86"
+        }
+      ]
+    },
+    {
+      "name": "Green and Vital",
+      "duration": 6,
+      "price": 35,
+      "likes": 0,
+      "hashtags": ["#vegan", "#healthy", "#consciouseating"],
+      "user": "650064b5d15f9c22f06d130d",
+      "activities": ["65006540d15f9c22f06d1327"],
+      "comments": [
+        {
+          "comment": "Even if you're not vegan, this tour is a delight. The options were delicious!",
+          "users": "50064b5d15f9c22f06d130e"
+        },
+        {
+          "comment": "I was pleasantly surprised by the variety and taste of vegan food.",
+          "users": "65019c056078bada6e2f7e85"
+        }
+      ]
+    },
+    {
+      "name": " Seafood Delights",
+      "duration": 7,
+      "price": 3,
+      "likes": 0,
+      "hashtags": ["#seafood", "#fish", "#marin flavors"],
+      "user": "64e3c67df81517b49c452f6c",
+      "activities": ["65006540d15f9c22f06d1328"],
+      "comments": [
+        {
+          "comment": "A feast of fresh seafood; I can't wait to go back",
+          "users": "65019c056078bada6e2f7e84"
+        },
+        {
+          "comment": "This tour made me appreciate the flavors of the sea even more.",
+          "users": "50064b5d15f9c22f06d130e"
+        }
+      ]
+    },
+    {
+      "name": "Flavors of the World",
+      "duration": 5,
+      "price": 50,
+      "likes": 0,
+      "hashtags": ["#ethnicfood", "#culinarydiversity", "#gourmettravel"],
+      "user": "650064b5d15f9c22f06d130a",
+      "activities": ["65006540d15f9c22f06d1329"],
+      "comments": [
+        {
+          "comment": "A global culinary adventure; I felt like I had traveled the world.",
+          "users": "5019c056078bada6e2f7e87"
+        },
+        {
+          "comment": "Ethnic food has always been a mystery to me, but now I love it!",
+          "users": "65019c056078bada6e2f7e84"
+        }
+      ]
+    },
+    {
+      "name": "Cheeses and Vines",
+      "duration": 5,
+      "price": 45,
+      "likes": 0,
+      "hashtags": ["#cheese", "#wines", "#pairing"],
+      "user": "650064b5d15f9c22f06d130b",
+      "activities": ["65006540d15f9c22f06d1326"],
+      "comments": [
+        {
+          "comment": "A gourmet experience; the pairings were surprisingly good.",
+          "users": "65019c056078bada6e2f7e86"
+        },
+        {
+          "comment": "If you love cheese and wine, this tour is a dream come true.",
+          "users": "5019c056078bada6e2f7e87"
+        }
+      ]
+    },
+    {
+      "name": "Street Food Delights",
+      "duration": 6,
+      "price": 34,
+      "likes": 0,
+      "hashtags": ["Street"],
+      "user": "650064b5d15f9c22f06d130f",
+      "activities": ["65006540d15f9c22f06d132b"],
+      "comments": [
+        {
+          "comment": "The authenticity of street food left me speechless.",
+          "users": "65019c056078bada6e2f7e86"
+        },
+        {
+          "comment": "This tour showed me the culinary heart of the city.",
+          "users": "65019c056078bada6e2f7e86"
+        }
+      ]
+    },
+    {
+      "name": "Chocolatíssimos",
+      "duration": 4,
+      "price": 57,
+      "likes": 0,
+      "hashtags": ["#chocolate", "#coffee", "#sweets"],
+      "user": "650064b5d15f9c22f06d1312",
+      "activities": ["65006540d15f9c22f06d132c"],
+      "comments": [
+        {
+          "comment": "A chocolate and coffee paradise; I loved every stop!",
+          "users": "65019c056078bada6e2f7e87"
+        },
+        {
+          "comment": "Chocolate and coffee lovers can't miss this tour.",
+          "users": "65019c056078bada6e2f7e86"
+        }
+      ]
+    },
+    {
+      "name": "Exquisite Viniculture",
+      "duration": 6,
+      "price": 48,
+      "likes": 0,
+      "hashtags": ["#wine", "#wineries ", "#winetasting"],
+      "user": "650064b5d15f9c22f06d1310",
+      "activities": ["65006540d15f9c22f06d132d"],
+      "comments": [
+        {
+          "comment": "An educational wine experience with exceptional tastings.",
+          "users": "65019c056078bada6e2f7e87"
+        },
+        {
+          "comment": "I became a wine lover after this tour.",
+          "users": "65019c056078bada6e2f7e86"
+        }
+      ]
+    },
+    {
+      "name": " Flavors of the World",
+      "duration": 5,
+      "price": 90,
+      "likes": 0,
+      "hashtags": ["#ethnic food", "#culinary diversity", "#gourmet travel"],
+      "user": "650064b5d15f9c22f06d1311",
+      "activities": ["65006540d15f9c22f06d132a"],
+      "comments": [
+        {
+          "comment": "Any recommendations for visiting?",
+          "users": "65019c056078bada6e2f7e84"
+        },
+        {
+          "comment": "The food here is delicious.",
+          "users": "65019c056078bada6e2f7e85"
+        }
+      ]
+    },
+    {
+      "name": "Cheeses and Strains",
+      "duration": 7,
+      "price": 30,
+      "likes": 0,
+      "hashtags": ["#cheeses ", "#wines", "#pairing"],
+      "user": "650064b5d15f9c22f06d130b",
+      "activities": ["65006540d15f9c22f06d132e"],
+      "comments": [
+        {
+          "comment": "I participated in the 'Vinícola Exquisita' wine tasting tour, and it was an exceptional experience.",
+          "users": "65019c056078bada6e2f7e84"
+        },
+        {
+          "comment": "The wine tastings were the highlight of the tour.",
+          "users": "65019c056078bada6e2f7e83"
+        }
+      ]
+    }
+  ]
+}
