@@ -120,7 +120,6 @@ const controller = {
                 { online: false },
                 { new: true }
             )
-
             return res.status(200).json({
                 success: true,
                 message: 'Logged out user'

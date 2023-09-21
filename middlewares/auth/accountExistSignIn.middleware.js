@@ -9,8 +9,7 @@ export const accountExistSignIn = async(req,res,next) => {
             email: user.email,
             image: user.image,
             password: user.password,
-            role: user.role,
-            is_verified: user.is_verified, 
+            verified: user.verified, 
             online: user.online,
         }
         return next()

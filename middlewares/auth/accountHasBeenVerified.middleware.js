@@ -1,5 +1,5 @@
 export const accountHasBeenVerified = async (req,res,next) => {
-    if(req.user.is_verified){
+    if(req.user.verified){
         return next()
     }
     res.status(400).json({
